@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="URL" value="www.google.com"/>
+  <listeners>
+    <listener class-name="packTwo.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="packTwo.Annotations">
+        <methods>
+          <include name="SuiteTestAfter"/>
+          <include name="Reportadding"/>
+          <include name="UseridGeneration"/>
+          <include name="Cookiesclose"/>
+          <include name="BeforeMyClass"/>
+          <include name="SuiteTest"/>
+          <include name="Cookies"/>
+          <include name="AfterMyClass"/>
+          <include name="Demo"/>
+        </methods>
+      </class> <!-- packTwo.Annotations -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
